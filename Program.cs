@@ -30,3 +30,12 @@ void PrintArray(string[] arr)
     }
     Console.Write("]");
 }
+Console.WriteLine("Введите количество строк в массиве: ");
+int length = Convert.ToInt32(Console.ReadLine());
+string[] FirstArray = new string[length];
+int count = FillFirstArray(FirstArray);
+string[] SecondArray = new string[count];
+FillSecondArray(FirstArray, SecondArray);
+PrintArray(FirstArray);
+Console.WriteLine();
+PrintArray(SecondArray);
